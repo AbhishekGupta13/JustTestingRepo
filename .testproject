@@ -8,6 +8,17 @@
   <sourcePath>src</sourcePath>
   <secureStoragePath>.secrets</secureStoragePath>
   <browserDebugPort>0</browserDebugPort>
+  <environments>
+    <environment name="qa">
+      <summary/>
+    </environment>
+    <environment name="production">
+      <summary/>
+    </environment>
+    <environment name="staging">
+      <summary/>
+    </environment>
+  </environments>
   <connectionClasses>
     <connectionClass name="ui">
       <connections>
