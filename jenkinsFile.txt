@@ -1,0 +1,23 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+               bat 'echo %environment%'
+               
+            }
+            
+        }
+        stage('running build') {
+            steps {
+               dir('C:\\Users\\abhishek.gupta\\Provar\\JustTesting\\JustTestingProject\\ANT') {
+                bat 'ant -f build.xml -Denv=%environment%'
+}
+               
+            }
+            
+        }
+        
+    }
+}
