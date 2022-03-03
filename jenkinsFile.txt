@@ -11,7 +11,7 @@ pipeline {
         }
         stage('running build') {
             steps {
-               dir('C:\\Users\\abhishek.gupta\\Provar\\JustTesting\\JustTestingProject\\ANT') {
+               dir('C:\\Users\\abhishek.gupta\\Provar\\JustTesting\\JustTestingProject') {
 				bat ''' docker build -t tagname .
                     docker run -t tagname'''
 				
