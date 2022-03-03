@@ -12,7 +12,10 @@ pipeline {
         stage('running build') {
             steps {
                dir('C:\\Users\\abhishek.gupta\\Provar\\JustTesting\\JustTestingProject\\ANT') {
-                bat 'ant -f build.xml -Denv=%environment%'
+				bat 'docker build -t agname .
+				docker run -t agname'
+				
+				
 }
                
             }
